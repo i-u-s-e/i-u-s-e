@@ -6,13 +6,19 @@ int main() {
     int totalQuestions1 = 5;
     int totalQuestions2 = 5;
     int totalQuestions3 = 5;
+
+
+
+    
     printf("Welcome to the Quiz Game!\n");
     printf("1. History Quiz\n2. Math Quiz\n3. Science Quiz\n4. Exit\n");
         int choice;
         printf("Enter your choice: ");                     // Choice of user to select which quiz he wants
         scanf("%d", &choice);
+
+
+    
      if (choice == 1){                   
-         
     printf("WELCOME TO THE HISTORY QUIZ\n.Answer the following questions (choose A, B, C, or D):\n");
 
     // Question 1
@@ -87,6 +93,14 @@ int main() {
         printf("Keep practicing. Your score is %d/5.\n", score1);
 }
  }
+
+
+
+
+
+
+
+         
      else if(choice==2){
         printf("WELCOME TO THE MATH QUIZ\n.Answer the following questions (choose A, B, C, or D):\n");
 
