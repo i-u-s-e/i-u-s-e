@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main() {
-    int score1 = 0;
+    int score1 = 0;                       //declaring the VARIABLES
     int score2 = 0;
     int score3 = 0;
     int totalQuestions1 = 5;
@@ -9,23 +9,22 @@ int main() {
     printf("Welcome to the Quiz Game!\n");
     printf("1. History Quiz\n2. Math Quiz\n3. Science Quiz\n4. Exit\n");
         int choice;
-        printf("Enter your choice: ");
+        printf("Enter your choice: ");                     // Choice of user to select which quiz he wants
         scanf("%d", &choice);
-     if (choice == 1){
-        
-        
+     if (choice == 1){                   
+         
     printf("WELCOME TO THE HISTORY QUIZ\n.Answer the following questions (choose A, B, C, or D):\n");
 
     // Question 1
     printf("1. Who among the following ruler was defeated by Seleucus?\n");
-    printf("   A. Chandra Gupta Maurya\n  B. Vikramaditya\n  C.Chanakya\n  D. None of the above\n");
+    printf("   A. Chandra Gupta Maurya\n  B. Vikramaditya\n  C.Chanakya\n  D. None of the above\n");    //wrote questions and options 
     char answer1;
-    scanf(" %c", &answer1);
+    scanf(" %c", &answer1);                                   //declared the correct option
     if (answer1 == 'A' || answer1 == 'a') {
-        printf("Correct!\n");
-        score1++;
+        printf("Correct!\n");                               
+        score1++;            //If correct score will increase by 1
     } else {
-        printf("Wrong! \n");
+        printf("Wrong! \n"); //If wrong no change to the score
     }
 
     // Question 2
@@ -76,10 +75,10 @@ int main() {
         printf("Wrong! \n");
     }
     
-    printf("Quiz completed!\n", totalQuestions1);
+    printf("Quiz completed!\n", totalQuestions1);       //Completion of the 5 question
     
-    if (score1 == totalQuestions1) {
-        printf("Outstanding! You scored 5/5. Great job!\n");
+    if (score1 == totalQuestions1) {                       //Declaring the result
+        printf("Outstanding! You scored 5/5. Great job!\n");          
     } else if (score1 >= 4) {
         printf("Very good! You scored %d/5. Well done!\n", score1);
     } else if (score1 >= 3){
@@ -241,12 +240,12 @@ int main() {
     
 }
 else if(choice==4){
-      printf("Goodbye!!!!\nEXIT");
+      printf("Goodbye!!!!\nEXIT");                       //If user wants to exit the program
 exit(0); 
     
 }
 else{
-      printf("Invalid choice");
+      printf("Invalid choice");                          //if seleceted Other than the above options of test
 }
 
     return 0;
